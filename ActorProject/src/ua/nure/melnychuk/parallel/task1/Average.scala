@@ -16,7 +16,7 @@ import akka.routing.Router
 
 object Average extends App {
 
-  calculate(nrOfWorkers = 4, nrOfElements = 1000000)
+  calculate(nrOfWorkers = 8, nrOfElements = 1000000)
 
   sealed trait Message
   case object Calculate extends Message
